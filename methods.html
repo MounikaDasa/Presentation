@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lisu+Bosa:wght@600&family=Montserrat:wght@200&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- Slick carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+    <style>
+        .class1 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center vertically */
+            gap: 30px; /* Gap between image and text */
+        }
+
+        .class1 img {
+            max-width: 60%; /* Set the width of the image */
+        }
+
+        .class1 .Container {
+            flex: 1; /* Take remaining space for text */
+        }
+
+        .title{
+          font-size: xx-large;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        ul li{
+          font-size:small;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+          font-size:x-large;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!-- Container for both sliders -->
+<div class="slider-container">
+    <!-- Slider 1 - class1 content -->
+    <div class="slider">
+        <div class="class1">
+            <img src="./Image3.png" alt="" /> <!-- Image on the left -->
+            <div class="Container"> <!-- Text on the right -->
+                <h1 class="title">Materials and Methods</h1>
+                <h2>Stimuli</h2>
+                <ul>
+                <li>Annulus with 16 alternating black (0.34 cd/m²) and white (309 cd/m²) segments had an inner
+                     radius of 8.5° and an outer radius of 12.5° presented on a gray background with fixation dot in the 
+                     center with a diameter of 0.46°.</li>
+                <li>Rotation: Annulus rotated at an angular velocity of 200°/s</li>
+                <li>Reversal: After 1000, 1100, 1200, 1300, 1400, or 1500 ms, the motion direction of the annulus reversed.</li>
+                <li>Target: Red disk (62.6 cd/m²) presented for 10 ms, 10.5° from fixation at 160, 180, or 200 degrees
+                     of polar angle offset from the top of the annulus always presented at the border between two segments with equal probability that the right segment 
+                     was black or white.</li>
+                <li>Reference Lines: Eight blue lines (6.1 cd/m²; width: 0.23°, height: 2.3°) drawn around the annulus at different polar offsets (0, 45, 90, 135, 180, 225, 270, and 315 degrees from the top of the annulus), Two smaller black lines (width: 0.19°, height: 1.37°) presented between every two blue lines.</li>
+                <li>Experiment consisted of 35 blocks, categorized into two types: Perception blocks and Saccade blocks.</li>
+                <li>Perception Blocks: 20 blocks with 120 trials each. After each trial, observers used a computer mouse to indicate the 
+perceived position of the target, with the annulus gradually turning gray to avoid distraction.
+Observers could move the mouse as soon as the annulus turned fully gray. They had unlimited time to 
+respond, and a new trial started immediately after a response.</li>
+                <li>If the target was not perceived, observers clicked at the location of the fixation dot.</li>
+                <li>Saccade Blocks: 15 blocks with 160 trials each. Observers were asked to make an eye movement (saccade) towards 
+the target. The fixation dot disappeared at the time of reversal, and all stimuli disappeared from the screen 500 ms 
+after reversal.
+The screen remained blank for 1000 ms before a new trial started in Saccade blocks.</li>
+               
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- Slick carousel JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Initialize sliders
+        $('.slider-container').slick({
+            arrows: false, // Hide navigation arrows
+            dots: true, // Show dots navigation
+            
+            fade: true // Use fade effect for smooth transition
+        });
+    });
+</script>
+</body>
+</html>

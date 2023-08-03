@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lisu+Bosa:wght@600&family=Montserrat:wght@200&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- Slick carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+    <style>
+        .class1 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+        }
+        .class2 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+        }
+        .title{
+          font-size: xxx-large;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        ul li{
+          font-size:x-large;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+          font-size:xx-large;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!-- Container for both sliders -->
+<div class="slider-container">
+    <!-- Slider 1 - class1 content -->
+    <div class="slider">
+        <div class="class1">
+            <h1 class="title">Introduction</h1>
+            <ul>
+                <li>To act effectively in the present, the brain must compensate not only for the time lost in the transmission and processing of sensory information but also for the expected time that will be spent preparing and executing motor programs, otherwise it will result in the mislocalization and mistargeting of moving objects.</li>
+                <li>To solve this, the brain might implement motion extrapolation, predicting where an object ought to be at the present moment.</li>
+            </ul>
+            <!-- More class1 content here if needed -->
+        </div>
+    </div>
+
+    <!-- Slider 2 - class2 content -->
+    <div class="slider">
+        <div class="class2">
+            <h2>Flash Grab Effect</h2>
+            <ul>
+                <li>
+                When you see a moving object, your brain predicts where the object will be next.</li>
+                <li>The flash-grab effect is a perceptual illusion that occurs when an object is flashed on a moving background that abruptly reverses direction.</br>
+                In this illusion, the object appears to be shifted in the direction of the background's new direction of motion.
+                </li>
+            </ul>
+            <video controls width="640" height="360">
+                <source src="./Flashdrag.mp4" type="video/mp4">
+            </video>
+            <p>source : Cavanagh P, Anstis S (2013) The flash grab effect. Vision Res 91:8–20.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/23872166/">CrossRef Medline</a></p>
+            <ul>
+                <li>One explanation for the flash-grab effect is that it is caused by the visual system's extrapolation process. When the background reverses direction, the visual system predicts that the object will continue moving in the same direction. However, the unexpected reversal of the background violates this prediction, and the visual system produces a corrective signal that shifts the object's perceived position in the direction of the background's new direction of motion.</li>
+                <li>
+                The neural basis for the flash-grab effect has been investigated using electroencephalography (EEG). EEG studies have shown that the flash-grab effect is associated with increased activity in the SC. This suggests that the SC is involved in the extrapolation process that underlies the flash-grab illusion.
+                </li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/26021721/">Source: Hogendoorn H, Verstraten FA, Cavanagh P (2015)</a>
+                <li>
+                One way that the visual system tracks the motion of objects is by extrapolating their future positions. This means that the visual system predicts where an object will be based on its current position and velocity. This extrapolation process is thought to be mediated by the superior colliculus (SC), a brain region that is involved in the control of eye movements.
+                </li>
+                <a href="https://www.nature.com/articles/332357a0">Choongkil Lee, William H. Rohrer 357360 (1988)</a>
+                <li>
+                  From this we can infer that both saccade movements and the predicitive position shifts has same neural basis
+                </li>
+            </ul>
+            <!-- More class2 content here if needed -->
+        </div>
+    </div>
+</div>
+
+<!-- Slick carousel JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Initialize sliders
+        $('.slider-container').slick({
+            arrows: false, // Hide navigation arrows
+            dots: true, // Show dots navigation
+            
+            fade: true // Use fade effect for smooth transition
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lisu+Bosa:wght@600&family=Montserrat:wght@200&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- Slick carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+    <style>
+        .class1 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+        }
+        .class2 {
+            margin: 50px;
+            color: rgb(39, 39, 41);
+        }
+        .title{
+          font-size: xxx-large;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        ul li{
+          font-size:x-large;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+          font-size:xx-large;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!-- Container for both sliders -->
+<div class="slider-container">
+    <!-- Slider 1 - class1 content -->
+    <div class="slider">
+        <div class="class1">
+            <h1 class="title">Current Hypothesis</h1>
+            <ul>
+                <li>Hypothesis makes the intriguing prediction that the timing 
+                    of an imminent saccade (latency of the saccade) can affect the perceived position of a moving object.</li>
+                <li>In support of this hypothesis, it has been reported that when observers execute saccades to objects that are perceptually 
+                    shifted due to the flash-drag illusion (Whitney and Cavanagh, 2000), the degree of shift depends on the latency of 
+                    the saccade (de’Sperati and Baud-Bovy, 2008).</li>
+            </ul>
+            <!-- More class1 content here if needed -->
+        </div>
+    </div>
+
+    <!-- Slider 2 - class2 content -->
+    <div class="slider">
+        <div class="class2">
+            <h2>Blind Saccades: An Asynchrony between Seeing and Looking" by de'Sperati and Baud-Bovy (2008).</h2>
+            <ul>
+                <li>Calculates the relation between the motion induced position shift and succade latency</li>
+            </ul>
+            <img src="./Image.png" alt=""/>
+        </br>
+    </br>
+            <img src="./Image2.png" alt=""/>
+
+        </div>
+    </div>
+    <div class="slider">
+        <div class="class2">
+
+            <ul>
+                <li>David Milner and Melvyn Goodale in their two-visual-systems theory proposed the classic dissociation
+                     between "vision for action" and "vision for
+                     perception" where the brain uses different representations of visual information for different
+                      purposes.
+                </li>
+                <li>
+                    The current study challenges the classic dissociation between "vision for action" and "vision for perception" showing that oculomotor position representations(responsible for controlling eye movements) are either shared with or tightly coupled to perceptual position representations.
+                </li>
+                <a href="http://www.scholarpedia.org/article/Action_and_perception#:~:text=Goodale%20and%20Milner%20(1992)%20have,cortex%20and%20a%20ventral%20stream">source : Action and perception - Scholarpedia</a>
+            </ul>
+           
+
+        </div>
+    </div>
+</div>
+
+<!-- Slick carousel JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Initialize sliders
+        $('.slider-container').slick({
+            arrows: false, // Hide navigation arrows
+            dots: true, // Show dots navigation
+            
+            fade: true // Use fade effect for smooth transition
+        });
+    });
+</script>
+</body>
+</html>
